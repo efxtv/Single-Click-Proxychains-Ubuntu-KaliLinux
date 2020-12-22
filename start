@@ -1,0 +1,50 @@
+#!/bin/bash
+#!/bin/bash
+#COLOUR
+
+cyan='\e[0;36m'
+green='\e[0;32m'
+greenl='\e[1;32m'
+okegreen='\033[92m'
+lightgreen='\e[1;32m'
+white='\e[1;37m'
+red='\e[1;31m'
+yellow='\e[0;33m'
+yellowl='\e[1;33m'
+BlueF='\e[1;34m' #Biru
+RESET="\033[00m" #normal
+orange='\e[38;5;166m'
+#color-end
+echo -e "$green"
+cat cos
+echo -e "$greenl""███████████████████████████████████████████████████████████████████████████████"
+echo -e "$greenl""<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> "
+read -p "────────────────────── What is your Favorite Browser [ 1 or 2 ] :" roo
+if [[ $roo == "1" ]]
+   then 
+echo -e "$greenl" "     [ ✔ ] Starting tor service──────────────────────█<><><>───[ Wait ]<><><>  █──"
+sudo service tor stop 2>&1
+sudo service tor start 2>&1
+sleep 1
+echo -e "$greenl" "     [ ✔ ] Tor status────────────────────────────────█<><><>───[ Active ]<><><>  █──"
+sleep 1
+echo -e "$greenl" "    █ [ ✔ ] IT WILL CLOSE THE BROWSER FIRST█────<><><>───[ FOUND ]<><><>  █──"
+pkill google-chrome 2>&1
+sleep 3
+proxychains google-chrome duckduckgo.com
+elif [[ $roo == "2" ]]
+   then
+echo -e "$greenl" "     [ ✔ ] Starting tor service──────────────────────█<><><>───[ Wait ]<><><>  █──"
+sudo service tor stop 2>&1
+sudo service tor start 2>&1
+sleep 1
+echo -e "$greenl" "     [ ✔ ] Tor status────────────────────────────────█<><><>───[ Active ]<><><>  █──"
+sleep 1
+echo -e "$greenl" "    █ [ ✔ ] IT WILL CLOSE THE BROWSER FIRST█────<><><>───[ FOUND ]<><><>  █──"
+pkill firefox 2>&1
+sleep 3
+proxychains firefox duckduckgo.com
+else 
+    echo "Are you kidding me??? select 1 or 2...Go and get back"
+    sleep 10
+fi
