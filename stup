@@ -58,6 +58,7 @@ echo -e " $greenl     [$red X $green] Tor─────────────
 sleep 1
 echo -e "$greenl" "     [ I ] Installing Tor────────────────────█<><><>───[ INSTALL ]<><><>  █──"
 sleep 3
+sudo apt-get install xterm > /dev/null 2>&1
 xterm -T "<><><>█── INSTALL ME NOW█──<><><>" -geometry 100x40 -e "sudo apt-get install tor -y"
 echo -e "$greenl" "     [ ✔ ] Tor installed──────────────█───────<><><>───[ GREAT ]<><><>  █──"
 fi
