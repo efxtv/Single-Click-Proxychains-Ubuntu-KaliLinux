@@ -1,0 +1,45 @@
+NOTE: USE THE SCRIPT IN VIRTUAL BOX. THIS IS SOMETHING I WOULD NEVER RECOMMEND TO USE IN BASE OS
+
+XTERM NOT FOUND ERROR RESOLVED---------------------
+
+For more detailed installation watch the video:
+https://youtu.be/GRz_fk_Uf5k
+
+PLEASE FOLLOW THE STEPS
+
+Step 1----
+Run the command in your terminal 
+(note if there is no output after running command 'wich xterm' 
+you can move to step 2 else there is any output contact to me on Insta)
+
+which xterm
+
+Step 2----
+Run add the repository to /etc/apt/sources.list
+
+1 . kali-rolling (Default & frequently updated): #It may be added
+
+echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" | sudo tee /etc/apt/sources.list
+
+2 . kali-last-snapshot (Point release so more “stable” & the “safest”): # recommend
+
+echo "deb http://http.kali.org/kali kali-last-snapshot main non-free contrib" | sudo tee /etc/apt/sources.list
+
+3 . kali-experimental (Packages which are under testing - often used with the rolling repository): # NEVER recommend
+
+echo "deb http://http.kali.org/kali kali-experimental main non-free cont
+
+Step 3----
+For more detailed installation watch the video:
+https://youtu.be/GRz_fk_Uf5k
+
+Step 4----
+Install Xterm terminal 
+sudo apt install xterm
+
+Step 5
+sudo apt update; sudo apt upgrade
+
+Cheers
+
+Please subscribe and Share this video with someone who loves to watch such content.
